@@ -1,0 +1,490 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+    padding: 25rem 9% 2rem;
+}
+
+/*Header*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: .3s;
+}
+
+.header.hola {
+    background: var(--bg-color);
+}
+
+.logo {
+    position: relative;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.navbar {
+    position: relative;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+
+}
+
+#menu-icon {
+    position: relative;
+    font-size: 3.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+
+
+/*Sobre Mi*/
+.sobremi {
+    margin-top: 0 20%;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+
+.sobremi h3,
+h4 {
+    color: var(--main-color);
+    margin-bottom: 0.9rem;
+}
+
+.sobremi h2 {
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.sobremi h3 {
+    border-bottom: 0.2rem solid #00abf0;
+    padding-bottom: 0.5rem;
+    margin-top: 1.8rem;
+}
+
+.sobremi ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.sobremi li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.sobremi p {
+    text-align: justify;
+    margin-bottom: 1.3rem;
+}
+
+.certificaciones {
+    margin-top: 1.25rem;
+    text-align: center;
+}
+
+.certificaciones h4 {
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    height: 5rem;
+    background-color: transparent;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 3.2rem;
+    font-size: 1.5rem;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+    margin-bottom: 0.9rem;
+    font-size: 1.5rem;
+}
+
+.certificaciones h4:hover {
+    color: var(--bg-color);
+}
+
+.certificaciones h4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--main-color);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.certificaciones h4:hover::before {
+    width: 100%;
+}
+
+.certificaciones ul {
+    display: none;
+    background-color: var(--bg-color);
+    padding: 0.9rem;
+    border-radius: 0.3rem;
+}
+
+/*Autodidacta*/
+.autodidacta {
+    background-color: var(--second-bg-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    font-size: 1.3rem;
+}
+
+.autodidacta h2 {
+    text-align: center;
+}
+
+.hack-the-box h3 {
+    text-align: center;
+    color: var(--text-color);
+    padding: 2%;
+    font-weight: bold;
+}
+
+.over-the-wire h3 {
+    text-align: center;
+    color: var(--text-color);
+    padding: 2%;
+    font-weight: bold;
+}
+
+.autodidacta span {
+    color: var(--main-color);
+}
+
+.autodidacta p {
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0.8rem;
+}
+
+
+.btn-box {
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    height: 5rem;
+    background-color: transparent;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 3.2rem;
+    font-size: 1.5rem;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+    margin-bottom: 0.9rem;
+    text-decoration: none;
+}
+
+.btn-box:hover {
+    color: var(--bg-color);
+}
+
+.btn-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--main-color);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-box:hover::before {
+    width: 100%;
+}
+
+/*Certificaciones y Títulos*/
+.certificacion-titulos {
+    background-color: var(--second-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certificacion-titulos h2 {
+    color: var(--main-color);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.tabla-container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.certificacion-titulos table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.certificacion-titulos th, .certificacion-titulos td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid var(--main-color);
+}
+
+.certificacion-titulos th {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.certificacion-titulos .tiene {
+    color: green;
+    font-weight: bold;
+}
+
+.certificacion-titulos .no-tiene {
+    color: red;
+    font-weight: bold;
+}
+
+.certificacion-titulos .en-proceso {
+    color: yellow;
+    font-weight: bold;
+}
+
+/* Secciones alternando colores */
+section:nth-child(odd) {
+    background: var(--second-bg-color);
+}
+
+section:nth-child(even) {
+    background: var(--bg-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.cabecera {
+    font-size: 5rem;
+    text-align: center;
+}
+
+span {
+    color: var(--main-color);
+}
+
+/*Footer*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
+
+.footer-text,
+.footer-iconoarriba {
+    position: relative;
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+.footer-iconoarriba a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.footer-iconoarriba a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.footer-iconoarriba a:hover::before {
+    width: 100%;
+}
+
+.footer-iconoarriba a i {
+    font-size: 2.4rem;
+    color: var(--bg-color);
+    transition: .5s;
+}
+
+.footer-iconoarriba a:hover i {
+    color: var(--main-color);
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 4%;
+    }
+
+    section {
+        padding: 10rem 4% 2rem;
+    }
+
+    .footer {
+        padding: 2rem 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 4%;
+        background: var(--main-color);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        z-index: 1;
+        transition: .25s ease;
+        transition-delay: .25s;
+    }
+
+    .navbar.active {
+        left: 0;
+        transition-delay: 0s;
+    }
+
+    .navbar .active-nav {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        z-index: -1;
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active .active-nav {
+        left: 0;
+        transition-delay: .25s;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        transform: translateX(-20rem);
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active a {
+        transform: translateX(0);
+        transition-delay: .25s;
+    }
+}
+
+@media (max-width: 520px) {
+    html {
+        font-size: 50%;
+    }
+
+    .cabecera {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .cabecera {
+        font-size: 3.5rem;
+    }
+}

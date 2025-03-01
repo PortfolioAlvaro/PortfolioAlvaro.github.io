@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Álvaro Castro</title>
+
+    <link rel="stylesheet" href="/css/style1.css">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+</head>
+
+<body>
+    <!-- Diseño header -->
+    <header class="header">
+        <a href="/index.html" class="logo">Home</a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#sobre-mi" class="active">Más sobre mí</a>
+            <a href="#autodidacta">Autodidacta</a>
+            <a href="#certificacion-titulos">Certificaciones</a>
+
+            <span class="active-nav"></span>
+        </nav>
+    </header>
+    <section class="sobremi" id="sobre-mi">
+        <h2>Más Sobre <span>Mí</span></h2>
+        <p>Desde siempre me ha apasionado la tecnología y la seguridad informática. Soy técnico en Sistemas
+            Microinformáticos y Redes (SMR) y próximamente comenzaré mis estudios en Administración de Sistemas
+            Informáticos en Red (ASIR) para ampliar mis conocimientos en redes, sistemas y administración de
+            infraestructuras. Además, estoy perfeccionando mi inglés, actualmente en nivel B2, ya que es fundamental en
+            el ámbito de la ciberseguridad.</p>
+
+        <p>Mi principal enfoque es la seguridad ofensiva y el pentesting. Para desarrollar mis habilidades prácticas,
+            entreno en plataformas como Hack The Box y OverTheWire, donde resuelvo retos que abarcan desde el
+            reconocimiento y la explotación de vulnerabilidades hasta la escalada de privilegios y el análisis forense.
+            Considero que la práctica en entornos simulados es clave para aplicar los conocimientos teóricos en
+            escenarios del mundo real.</p>
+
+        <h3>Certificaciones en ciberseguridad (Aspiraciones)</h3>
+
+        <div class="certificaciones">
+            <h4 onclick="toggleSection('pentesting')">Seguridad ofensiva y pentesting</h4>
+            <ul id="pentesting">
+                <li>OSCP (Offensive Security Certified Professional)</li>
+                <li>OSEP (Offensive Security Experienced Penetration Tester)</li>
+                <li>OSWE (Offensive Security Web Expert)</li>
+                <li>CRTP (Certified Red Team Professional)</li>
+                <li>CEH (Certified Ethical Hacker)</li>
+                <li>CompTIA Pentest+</li>
+                <li>GIAC Penetration Tester (GPEN)</li>
+            </ul>
+        </div>
+
+        <div class="certificaciones">
+            <h4 onclick="toggleSection('defensa')">Ciberseguridad general y defensa</h4>
+            <ul id="defensa">
+                <li>CompTIA Security+</li>
+                <li>CISSP (Certified Information Systems Security Professional)</li>
+                <li>GSEC (GIAC Security Essentials)</li>
+                <li>CySA+ (CompTIA Cybersecurity Analyst)</li>
+                <li>SOC Analyst (Blue Team Level 1 & 2)</li>
+                <li>ECSA (EC-Council Certified Security Analyst)</li>
+            </ul>
+        </div>
+
+        <div class="certificaciones">
+            <h4 onclick="toggleSection('redes')">Redes y administración de sistemas</h4>
+            <ul id="redes">
+                <li>Cisco CCNA (Cisco Certified Network Associate)</li>
+                <li>CCNP Security (Cisco Certified Network Professional - Security)</li>
+                <li>CompTIA Network+</li>
+                <li>JNCIA-SEC (Juniper Networks Certified Associate - Security)</li>
+            </ul>
+        </div>
+
+        <div class="certificaciones">
+            <h4 onclick="toggleSection('cloud')">Seguridad en la nube y DevSecOps</h4>
+            <ul id="cloud">
+                <li>Microsoft Certified: Azure Security Engineer Associate</li>
+                <li>AWS Certified Security - Specialty</li>
+                <li>Google Professional Cloud Security Engineer</li>
+                <li>CompTIA Cloud+</li>
+                <li>Certified Kubernetes Security Specialist (CKS)</li>
+                <li>DevSecOps Foundation</li>
+            </ul>
+        </div>
+
+        <div class="certificaciones">
+            <h4 onclick="toggleSection('forense')">Análisis forense e investigación</h4>
+            <ul id="forense">
+                <li>GCFA (GIAC Certified Forensic Analyst)</li>
+                <li>CHFI (Computer Hacking Forensic Investigator)</li>
+                <li>EnCase Certified Examiner (EnCE)</li>
+            </ul>
+        </div>
+
+        <div class="certificaciones">
+            <h4 onclick="toggleSection('programacion')">Programación y automatización en seguridad</h4>
+            <ul id="programacion">
+                <li>Python for Cybersecurity</li>
+                <li>CompTIA Linux+</li>
+                <li>LPIC-1 y LPIC-2</li>
+            </ul>
+        </div>
+
+        <h3>Mi objetivo profesional</h3>
+        <p>Mi meta es especializarme en seguridad ofensiva y convertir mi pasión en una carrera profesional. Busco
+            adquirir un perfil técnico completo, combinando conocimientos en pentesting, seguridad defensiva, redes y
+            cloud security. Estoy en constante aprendizaje y actualización, ya que la ciberseguridad es un campo en
+            continua evolución, y mantenerse al día es clave para estar preparado ante cualquier desafío.</p>
+    </section>
+
+    <!-- Sección Autodidacta -->
+    <section class="autodidacta" id="autodidacta">
+        <h2>Autodidacta en <span>Ciberseguridad</span></h2>
+        <p>Mi pasión por la ciberseguridad me ha llevado a convertirme en un estudiante autodidacta, utilizando
+            plataformas en línea para mejorar mis habilidades y conocimientos en pentesting. Estoy comprometido en
+            aprender de manera independiente y aplicar mis conocimientos a situaciones del mundo real. Dos de las
+            principales plataformas que utilizo son Hack The Box y OverTheWire.</p>
+
+        <div class="hack-the-box">
+            <h3>Hack The <span>Box</span></h3>
+            <p>Hack The Box es una plataforma interactiva de entrenamiento en ciberseguridad, diseñada para
+                profesionales y entusiastas que buscan mejorar sus habilidades en pentesting. Ofrece una variedad de
+                máquinas virtuales y desafíos que simulan vulnerabilidades del mundo real, permitiéndome practicar
+                técnicas de hacking en un entorno seguro y legal.</p>
+
+            <p>Las máquinas en Hack The Box están clasificadas en diferentes niveles de dificultad: fácil, medio y
+                difícil. Esto me permite elegir retos que se adapten a mi nivel de habilidad. He aprendido sobre
+                diversas técnicas de explotación, desde inyección de SQL y bypass de autenticación hasta escalada de
+                privilegios y obtención de acceso a sistemas críticos. Cada desafío me ayuda a desarrollar un enfoque
+                metodológico para identificar y remediar vulnerabilidades.</p>
+
+            <p>La plataforma también fomenta la colaboración y el aprendizaje comunitario, donde puedo interactuar con
+                otros miembros y compartir enfoques para resolver desafíos. Esta experiencia ha enriquecido mi proceso
+                de aprendizaje y me mantiene actualizado sobre las últimas tendencias y técnicas en ciberseguridad.</p>
+
+            <div class="certificaciones">
+                <a href="/mas/htb.html" class="btn-box">Ver mis logros en Hack The Box</a>
+            </div>
+        </div>
+
+        <div class="over-the-wire">
+            <h3><span>OverTheWire</span></h3>
+            <p>OverTheWire es otra plataforma valiosa que utilizo para mejorar mis habilidades de ciberseguridad. Se
+                centra en la gamificación del aprendizaje, ofreciendo una serie de "bandit wargames" que me permiten
+                aprender sobre vulnerabilidades y técnicas de hacking a través de una serie de niveles cada vez más
+                desafiantes.</p>
+
+            <p>A través de los diferentes wargames, puedo aprender sobre conceptos fundamentales como la manipulación de
+                sistemas, la seguridad en redes, la gestión de contraseñas y la criptografía. La naturaleza práctica de
+                OverTheWire me permite aplicar mis conocimientos teóricos y fortalecer mis habilidades de resolución de
+                problemas en situaciones del mundo real.</p>
+
+            <p>Cada nivel completado representa un logro significativo en mi viaje educativo, y la satisfacción de
+                resolver problemas complejos es invaluable. Además, la comunidad de OverTheWire proporciona recursos y
+                apoyo adicional para ayudarme en mi aprendizaje.</p>
+
+            <div class="certificaciones">
+                <a href="URL_DE_TU_PAGINA_DE_PRUEBAS_OVER_THE_WIRE" class="btn-box">Ver mis logros en OverTheWire</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Sección Certificaciones y Títulos -->
+    <section class="certificacion-titulos" id="certificacion-titulos">
+        <h2>Certificaciones y Títulos Académicos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Certificación / Título</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Técnico en Sistemas Microinformáticos y Redes (SMR)</td>
+                    <td class="tiene">Obtenido</td>
+                </tr>
+                <tr>
+                    <td>Técnico en Superior en Administración de Sistemas Informáticos</td>
+                    <td class="en-proceso">En-proceso</td>
+                </tr>
+                <tr>
+                    <td>B2 First Cambridge</td>
+                    <td class="en-proceso">En-proceso</td>
+                </tr>
+                <tr>
+                    <td>Especialización en Ciberseguridad</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>OSCP (Offensive Security Certified Professional)</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>OSEP (Offensive Security Experienced Penetration Tester)</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>OSWE (Offensive Security Web Expert)</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>CEH (Certified Ethical Hacker)</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>CompTIA Pentest+</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>GIAC Penetration Tester (GPEN)</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>CompTIA Security+</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>CISSP (Certified Information Systems Security Professional)</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>GSEC (GIAC Security Essentials)</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>CySA+ (CompTIA Cybersecurity Analyst)</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>SOC Analyst (Blue Team Level 1 & 2)</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>ECSA (EC-Council Certified Security Analyst)</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>Cisco CCNA (Cisco Certified Network Associate)</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>CCNP Security (Cisco Certified Network Professional - Security)</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>CompTIA Network+</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>JNCIA-SEC (Juniper Networks Certified Associate - Security)</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>Microsoft Certified: Azure Security Engineer Associate</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>AWS Certified Security - Specialty</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>Google Professional Cloud Security Engineer</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>CompTIA Cloud+</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>Certified Kubernetes Security Specialist (CKS)</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>DevSecOps Foundation</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>GCFA (GIAC Certified Forensic Analyst)</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>CHFI (Computer Hacking Forensic Investigator)</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>EnCase Certified Examiner (EnCE)</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>Python for Cybersecurity</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>CompTIA Linux+</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+                <tr>
+                    <td>LPIC-1 y LPIC-2</td>
+                    <td class="no-tiene">No obtenida</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!--Diseño Footer-->
+    <footer class="footer">
+        <div class="footer-text">
+            <p></p>
+        </div>
+        <div class="footer-iconoarriba">
+            <a href="#"><i class='bx bxs-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
