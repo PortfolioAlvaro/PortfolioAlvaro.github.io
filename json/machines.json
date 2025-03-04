@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Cap",
+        "difficulty": "Easy",
+        "os": "Linux",
+        "link": "https://river-space-4f8.notion.site/Walkthrough-de-Cap-HTB-1a6cdb12dd8480d2bfa5d9c82784e5b9?pvs=73"
+    },
+    {
+        "name": "Titanic",
+        "difficulty": "Easy",
+        "os": "Linux",
+        "link": "https://www.notion.so/Walkthrough-de-Titanic-1a7cdb12dd8480088735e8d5a87997cd#1a7cdb12dd8480189ff6d687ac23ea7a"
+    },
+    {
+        "name": "UnderPass",
+        "difficulty": "Easy",
+        "os": "Linux",
+        "link": "https://www.notion.so/Walkthrough-Underpass-1a9cdb12dd8480ee9cb1fe702df5f380"
+    },
+    {
+        "name": "EscapeTwo",
+        "difficulty": "Easy",
+        "os": "Windows",
+        "link": "https://www.notion.so/Walkthrough-de-EscapeTwo-1a8cdb12dd8480a7a36cc8479ca9b6e4#1a8cdb12dd84809092e5e10c77295b62"
+    },
+    {
+        "name": "Cicada",
+        "difficulty": "Easy",
+        "os": "Windows",
+        "link": "https://www.notion.so/Walkthrough-de-Cicada-1a6cdb12dd848094950ef4f6ca1e6a5f#1a7cdb12dd84802295a8e49d45c647ef"
+    },
+    {
+        "name": "Chemistry",
+        "difficulty": "Easy",
+        "os": "Linux",
+        "link": "https://www.notion.so/Walkthrough-Chemistry-1a9cdb12dd848054a94ef56920202d89"
+    },
+    {
+        "name": "Alert",
+        "difficulty": "Easy",
+        "os": "Linux",
+        "link": "https://www.notion.so/Walkthrough-de-Alert-1abcdb12dd8480a1a862db3bb0089a45"
+    },
+    {
+        "name": "LinkVortex",
+        "difficulty": "Easy",
+        "os": "Linux",
+        "link": "https://www.notion.so/Walkthrough-de-LinkVortex-1abcdb12dd8480eb9b5bdcd01a35e1dc#1abcdb12dd8480f79453f22aebadaa52"
+    },
+    {
+        "name": "TwoMillion",
+        "difficulty": "Easy",
+        "os": "Linux",
+        "link": "https://www.notion.so/Walkthrough-de-Titanic-1a7cdb12dd8480088735e8d5a87997cd?p=1accdb12dd84808897d2c2914a3535c5&pm=c#1accdb12dd848055adbdfb8d4a9fb2f8"
+    }
+]
