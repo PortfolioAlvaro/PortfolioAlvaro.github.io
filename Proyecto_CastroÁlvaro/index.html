@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Index LMAR</title>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="./css/styles1.css">
+</head>
+
+<body>
+	<header>
+		<div class="header">
+
+			<nav class="navbar">
+				<div class="custom-nav" aria-label="Main navigation">
+
+					<a href="#" class="item" style="--hue:200">
+						<span class="icon mono" id="blur0" aria-hidden="true">🏠</span>
+						<span class="icon mono" aria-hidden="true">🏠</span>
+						<span class="icon midl" aria-hidden="true">🏠</span>
+						<span class="icon grey" aria-hidden="true">🏠</span>
+						<span class="label">Home</span>
+					</a>
+
+					<a href="html/recetas.html" target="_blank" class="item" style="--hue:260">
+						<span class="icon mono" id="blur1" aria-hidden="true">📄</span>
+						<span class="icon mono" aria-hidden="true">📄</span>
+						<span class="icon midl" aria-hidden="true">📄</span>
+						<span class="icon grey" aria-hidden="true">📄</span>
+						<span class="label">Recetas</span>
+					</a>
+
+					<a href="html/chef.html" target="_blank" class="item" style="--hue:320">
+						<span class="icon mono" id="blur2" aria-hidden="true">🧑‍🍳</span>
+						<span class="icon mono" aria-hidden="true">🧑‍🍳</span>
+						<span class="icon midl" aria-hidden="true">🧑‍🍳</span>
+						<span class="icon grey" aria-hidden="true">🧑‍🍳</span>
+						<span class="label">Chef</span>
+					</a>
+
+					<a href="html/categorias.html" target="_blank" class="item" style="--hue:40">
+						<span class="icon mono" id="blur3" aria-hidden="true">🏷️</span>
+						<span class="icon mono" aria-hidden="true">🏷️</span>
+						<span class="icon midl" aria-hidden="true">🏷️</span>
+						<span class="icon grey" aria-hidden="true">🏷️</span>
+						<span class="label">Categorías</span>
+					</a>
+
+					<a href="#" class="item" id="nav-search" style="--hue:160">
+						<span class="icon mono" id="blur4" aria-hidden="true">🔍</span>
+						<span class="icon mono" aria-hidden="true">🔍</span>
+						<span class="icon midl" aria-hidden="true">🔍</span>
+						<span class="icon grey" aria-hidden="true">🔍</span>
+						<span class="label">Buscar</span>
+					</a>
+
+				</div>
+			</nav>
+
+			<button class="btn-menu-responsive">
+				<i class='bx bx-menu' style='color:#b48a2a'></i>
+			</button>
+			<div id="search-container" class="search-container" aria-hidden="true">
+				<input id="search-input" class="search-input" type="search" placeholder="Buscar recetas..."
+					aria-label="Buscar recetas" />
+				<ul id="search-results" class="search-results" role="listbox" aria-label="Resultados de búsqueda"></ul>
+			</div>
+
+		</div>
+
+		<div class="menu-mobile">
+			<div class="btn-close">
+				<i class='bx bx-x'></i>
+			</div>
+			<nav class="navbar">
+				<div class="custom-nav" aria-label="Main navigation">
+
+					<a href="#"  target="_blank" class="item" style="--hue:200">
+						<span class="icon mono" id="blur0" aria-hidden="true">🏠</span>
+						<span class="label">Home</span>
+					</a>
+
+					<a href="./html/recetas.html" target="_blank" class="item" style="--hue:260">
+						<span class="icon mono" id="blur1" aria-hidden="true">📄</span>
+						<span class="label">Recetas</span>
+					</a>
+
+					<a href="./html/chef.html" target="_blank" class="item" style="--hue:320">
+						<span class="icon mono" id="blur2" aria-hidden="true">🧑‍🍳</span>
+						<span class="label">Chef</span>
+					</a>
+
+					<a href="./html/categorias.html" target="_blank" class="item" style="--hue:40">
+						<span class="icon mono" id="blur3" aria-hidden="true">🏷️</span>
+						<span class="label">Categorías</span>
+					</a>
+
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<section class="container section-banner-hero">
+		<div class="content">
+			<span class="badge-hot-recipes">
+				<i class='bx bxs-hot bx-flashing' style='color:#ff0000'></i>
+				Recetas Calientes
+			</span>
+
+			<h1>Alitas de pollo picantes</h1>
+
+			<p>
+				“Crujientes, sabrosas y perfectamente condimentadas:
+				Disfrute de la receta definitiva de deliciosas alitas de
+				pollo que le dejarán con ganas de más”
+			</p>
+
+			<div class="badges">
+				<span>
+					<i class='bx bx-time'></i>
+					30 min
+				</span>
+
+				<span>
+					<i class='bx bx-fork'></i>
+					Pollo
+				</span>
+			</div>
+
+			<button>Ver recetas<i class='bx bx-play'></i></button>
+
+		</div>
+		<div class="container-img">
+			<img src="img/alitas.png" alt="Imagen Banner Hero" />
+		</div>
+	</section>
+
+	<section class="section-categories">
+		<div class="container">
+			<div class="section-header">
+				<h2>Categorías</h2>
+				<a href="./html/categorias.html" target="_blank" class="view-all">Ver todas las categorías</a>
+			</div>
+
+			<div class="list-categories">
+
+				<div class="category-card">
+					<i class='bx bxs-coffee-togo'></i>
+					<p>Desayuno</p>
+				</div>
+
+				<div class="category-card">
+					<i class='bx bxs-leaf'></i>
+					<p>Vegano</p>
+				</div>
+
+				<div class="category-card">
+					<i class='bx bxs-hot'></i>
+					<p>Carne</p>
+				</div>
+
+				<div class="category-card">
+					<i class='bx bxs-cake'></i>
+					<p>Postre</p>
+				</div>
+
+				<div class="category-card">
+					<i class='bx bxs-grid'></i>
+					<p>Chocolate</p>
+				</div>
+
+				<div class="category-card">
+					<i class='bx bxs-coffee'></i>
+					<p>Café</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<main class="container">
+		<h2>Recetas sencillas y sabrosas</h2>
+		<p>
+			Delicias culinarias sencillas para mejorar tu cocina diaria.
+			Descubra comidas rápidas y deliciosas que impresionarán a sus
+			invitados y harán de cada comida una ocasión especial.
+		</p>
+
+		<div class="list-card-recipes">
+
+			<div class="card-recipe"
+				data-ingredients="Harina de avena|2 Huevos|Leche (vegetal o normal)|Azúcar|Fresas|Jarabe de miel"
+				data-steps="1. Mezclar los ingredientes secos.|2. Agregar los líquidos y mezclar hasta obtener una masa homogénea.|3. Cocinar en sartén caliente con mantequilla por 2 minutos cada lado.|4. Servir apilados, decorados con fresas y jarabe de miel.">
+				<div class="container-img">
+					<img src="img/pancakes.png" alt="Imagen Receta" />
+					<button class="btn-favorite">
+						<i class='bx bxs-bookmark'></i>
+					</button>
+				</div>
+
+				<div class="content">
+					<h3>Pancakes de avena y fresa con jarabe de miel</h3>
+
+					<div class="footer">
+						<span class="time">
+							<i class='bx bx-time'></i>
+							30 min
+						</span>
+						<span class="category">
+							<i class='bx bx-fork'></i>
+							Desayuno
+						</span>
+					</div>
+					<button class="toggle-flip">Ver Receta</button>
+				</div>
+			</div>
+
+			<div class="card-recipe"
+				data-ingredients="Filete de salmón (200g)|1 Lima|1 trozo de Jengibre fresco|Salsa de soja|1 cda. Miel|Aceite de oliva"
+				data-steps="1. Marinar el salmón con jugo de lima y jengibre rallado por 15 minutos.|2. Asar el salmón en sartén o horno hasta el punto deseado.|3. Preparar salsa mezclando soja, miel y un poco de lima.|4. Servir con arroz blanco y rociar con la salsa de jengibre.">
+				<div class="container-img">
+					<img src="img/salmon.png" alt="Imagen Receta" />
+					<button class="btn-favorite">
+						<i class='bx bxs-bookmark'></i>
+					</button>
+				</div>
+
+				<div class="content">
+					<h3>Salmón asado con lima fresca y salsa de jengibre</h3>
+
+					<div class="footer">
+						<span class="time">
+							<i class='bx bx-time'></i>
+							30 min
+						</span>
+						<span class="category">
+							<i class='bx bx-fork'></i>
+							Pescado
+						</span>
+					</div>
+					<button class="toggle-flip">Ver Receta</button>
+				</div>
+			</div>
+
+			<div class="card-recipe"
+				data-ingredients="Carne Wagyu (150g)|Pan brioche|Queso Cheddar|Lechuga fresca|Tomate en rodajas|Salsa especial"
+				data-steps="1. Formar la carne en hamburguesas y salpimentar.|2. Asar la carne al punto deseado. Colocar el queso al final para que se derrita.|3. Calentar el pan brioche.|4. Montar la hamburguesa en pan con queso, vegetales y salsa. Servir con papas.">
+				<div class="container-img">
+					<img src="img/burguerwaggyu.png" alt="Imagen Receta" />
+					<button class="btn-favorite">
+						<i class='bx bxs-bookmark'></i>
+					</button>
+				</div>
+
+				<div class="content">
+					<h3>Gran Hamburguesa de carne de res Wagyu</h3>
+
+					<div class="footer">
+						<span class="time">
+							<i class='bx bx-time'></i>
+							30 min
+						</span>
+						<span class="category">
+							<i class='bx bx-fork'></i>
+							Aperitivo
+						</span>
+					</div>
+					<button class="toggle-flip">Ver Receta</button>
+				</div>
+			</div>
+
+			<div class="card-recipe"
+				data-ingredients="Mezcla de hojas verdes|Tomate cherry|Pepino|Zanahoria rallada|Aderezo de mayonesa ligero"
+				data-steps="1. Lavar y cortar todos los ingredientes frescos.|2. Mezclar en un bowl grande.|3. Preparar aderezo ligero (mayonesa, limón, sal).|4. Servir la ensalada aderezada con un toque de pimienta.">
+				<div class="container-img">
+					<img src="img/ensaladamixta.png" alt="Imagen Receta" />
+					<button class="btn-favorite">
+						<i class='bx bxs-bookmark'></i>
+					</button>
+				</div>
+
+				<div class="content">
+					<h3>Ensalada mixta saludable y fresca con mayonesa</h3>
+
+					<div class="footer">
+						<span class="time">
+							<i class='bx bx-time'></i>
+							30 min
+						</span>
+						<span class="category">
+							<i class='bx bx-fork'></i>
+							Saludable
+						</span>
+					</div>
+					<button class="toggle-flip">Ver Receta</button>
+				</div>
+			</div>
+
+			<div class="card-recipe"
+				data-ingredients="Carne de pollo molida|Queso crema|Cebolla y Ajo picados|Pan rallado|Salsa de tomate casera"
+				data-steps="1. Mezclar pollo, queso crema, cebolla, ajo y pan rallado. Formar albóndigas.|2. Freír las albóndigas hasta que estén doradas por fuera.|3. Cocinar en salsa de tomate por 15 minutos a fuego lento.|4. Servir con perejil fresco.">
+				<div class="container-img">
+					<img src="img/albondigas.png" alt="Imagen Receta" />
+					<button class="btn-favorite">
+						<i class='bx bxs-bookmark'></i>
+					</button>
+				</div>
+
+				<div class="content">
+					<h3>Albóndigas de pollo con queso crema</h3>
+
+					<div class="footer">
+						<span class="time">
+							<i class='bx bx-time'></i>
+							30 min
+						</span>
+						<span class="category">
+							<i class='bx bx-fork'></i>
+							Carne
+						</span>
+					</div>
+					<button class="toggle-flip">Ver Receta</button>
+				</div>
+			</div>
+
+			<div class="card-recipe"
+				data-ingredients="Pasta (Fettuccine o Penne)|Pechuga de pollo troceada|Tocino o Bacon|Crema de leche (Nata)|Queso Parmesano|Ajo y Cebolla"
+				data-steps="1. Cocinar la pasta. Reservar agua de cocción.|2. Freír tocino, luego el pollo. Añadir ajo y cebolla.|3. Agregar la crema de leche y un poco de agua de la pasta. Condimentar.|4. Mezclar la pasta con la salsa y el queso parmesano.">
+				<div class="container-img">
+					<img src="img/pastacremosa.png" alt="Imagen Receta" />
+					<button class="btn-favorite">
+						<i class='bx bxs-bookmark'></i>
+					</button>
+				</div>
+
+				<div class="content">
+					<h3>Pasta cremosa de pollo y tocino</h3>
+
+					<div class="footer">
+						<span class="time">
+							<i class='bx bx-time'></i>
+							30 min
+						</span>
+						<span class="category">
+							<i class='bx bx-fork'></i>
+							Fídeos
+						</span>
+					</div>
+					<button class="toggle-flip">Ver Receta</button>
+				</div>
+			</div>
+
+			<div class="card-recipe"
+				data-ingredients="Masa de pancakes|Naranja|Arándanos frescos|Mantequilla|Jarabe de Arce"
+				data-steps="1. Preparar la mezcla de pancakes. Incorporar los arándanos a la masa.|2. Cocinar en sartén.|3. Servir con rodajas de naranja y un chorrito de jarabe de arce.|4. Disfrutar calientes.">
+				<div class="container-img">
+					<img src="img/pancakes2.png" alt="Imagen Receta" />
+					<button class="btn-favorite">
+						<i class='bx bxs-bookmark'></i>
+					</button>
+				</div>
+
+				<div class="content">
+					<h3>Pancakes afrutado con naranja y arándanos</h3>
+
+					<div class="footer">
+						<span class="time">
+							<i class='bx bx-time'></i>
+							30 min
+						</span>
+						<span class="category">
+							<i class='bx bx-fork'></i>
+							Dulce
+						</span>
+					</div>
+					<button class="toggle-flip">Ver Receta</button>
+				</div>
+			</div>
+
+			<div class="card-recipe"
+				data-ingredients="Arroz de grano largo|Pollo desmenuzado|Zanahoria|Guisantes|Pimiento|Azafrán o colorante|Caldo de pollo"
+				data-steps="1. Sofreír el pollo y las verduras.|2. Añadir el arroz, el azafrán y el caldo.|3. Cocinar a fuego lento hasta que el arroz esté listo y el líquido se haya absorbido.|4. Servir con cilantro fresco.">
+				<div class="container-img">
+					<img src="img/arrozpollo.png" alt="Imagen Receta" />
+					<button class="btn-favorite">
+						<i class='bx bxs-bookmark'></i>
+					</button>
+				</div>
+
+				<div class="content">
+					<h3>Arroz con pollo y verduras</h3>
+
+					<div class="footer">
+						<span class="time">
+							<i class='bx bx-time'></i>
+							30 min
+						</span>
+						<span class="category">
+							<i class='bx bx-fork'></i>
+							Aperitivo
+						</span>
+					</div>
+					<button class="toggle-flip">Ver Receta</button>
+				</div>
+			</div>
+
+			<div class="card-message">
+				<p>¡No olvides comer comida saludable!</p>
+
+				<img src="img/saludable.png" alt="Plato de comida saludable" />
+			</div>
+		</div>
+	</main>
+
+	<section class="container section-chef">
+		<div class="content">
+			<h2>Cada uno puede ser chef en su propia cocina</h2>
+			<p>
+				Descubra tips de chef para dar rienda suelta
+				al artista culinario que lleva dentro y hacer de cada comida
+				una obra maestra.
+			</p>
+			<a href="./html/chef.html">
+				<button class="btn">Aprender más</button>
+			</a>
+		</div>
+		<div class="container-img">
+			<img src="img/chef.png" alt="Imagen Chef" />
+		</div>
+	</section>
+
+	<section class="container section-more-recipes">
+		<h2>Prueba esta receta para alegrate el día</h2>
+		<p>
+			Deléitate con creaciones sabrosas. Desde clásicos
+			reconfortantes hasta giros innovadores, descubra platos que
+			alegran cada comida
+		</p>
+
+		<div class="list-card-recipes">
+
+			<div class="card-recipe" data-ingredients="Melón|Kiwi|Fresas|Uvas|Semillas de chía|Yogurt Griego|Miel"
+				data-steps="1. Cortar todas las frutas en trozos uniformes.|2. Mezclar el yogurt con la miel para el aderezo.|3. Combinar las frutas en un bowl.|4. Servir en copas, cubierto con el aderezo y espolvorear chía.">
+				<div class="container-img">
+					<img src="img/ensaladafrutas.png" alt="Imagen Receta" />
+					<button class="btn-favorite">
+						<i class='bx bxs-bookmark'></i>
+					</button>
+				</div>
+
+				<div class="content">
+					<h3>Ensalada tropical de frutas con super alimentos</h3>
+
+					<div class="footer">
+						<span class="time">
+							<i class='bx bx-time'></i>
+							30 min
+						</span>
+						<span class="category">
+							<i class='bx bx-fork'></i>
+							Saludable
+						</span>
+					</div>
+					<button class="toggle-flip">Ver Receta</button>
+				</div>
+			</div>
+
+			<div class="card-recipe"
+				data-ingredients="Filete Wagyu (300g)|Patatas pequeñas|Romero|Ajo|Mantequilla|Aceite de oliva"
+				data-steps="1. Sellar la carne en sartén caliente con mantequilla y romero 2 min por lado.|2. Terminar la cocción al gusto en el horno o sartén.|3. Freír las patatas y saltear con ajo picado.|4. Dejar reposar la carne y servir con las patatas.">
+				<div class="container-img">
+					<img src="img/wagyupapas.png" alt="Imagen Receta" />
+					<button class="btn-favorite">
+						<i class='bx bxs-bookmark'></i>
+					</button>
+				</div>
+
+				<div class="content">
+					<h3>Filete de carne de Wagyu con papas fritas</h3>
+
+					<div class="footer">
+						<span class="time">
+							<i class='bx bx-time'></i>
+							30 min
+						</span>
+						<span class="category">
+							<i class='bx bx-fork'></i>
+							Carne
+						</span>
+					</div>
+					<button class="toggle-flip">Ver Receta</button>
+				</div>
+			</div>
+
+			<div class="card-recipe"
+				data-ingredients="Arroz cocido (frío)|Huevo|Espárragos|Zanahoria|Salsa de soja|Aceite de sésamo"
+				data-steps="1. Saltear los espárragos y el huevo revuelto. Retirar.|2. Freír el arroz frío en aceite de sésamo a fuego alto.|3. Añadir las verduras, el huevo y la salsa de soja.|4. Mezclar rápidamente y servir caliente.">
+				<div class="container-img">
+					<img src="img/arrozfritojapo.png" alt="Imagen Receta" />
+					<button class="btn-favorite">
+						<i class='bx bxs-bookmark'></i>
+					</button>
+				</div>
+
+				<div class="content">
+					<h3>Arroz frito japonés con espárragos</h3>
+
+					<div class="footer">
+						<span class="time">
+							<i class='bx bx-time'></i>
+							30 min
+						</span>
+						<span class="category">
+							<i class='bx bx-fork'></i>
+							Oriental
+						</span>
+					</div>
+					<button class="toggle-flip">Ver Receta</button>
+				</div>
+			</div>
+
+			<div class="card-recipe"
+				data-ingredients="Tortillas de maíz|Coliflor|Nueces|Especias (pimentón, comino)|Aderezo de aguacate"
+				data-steps="1. Cortar la coliflor en ramilletes pequeños, sazonar y asar.|2. Tostar las nueces picadas.|3. Calentar las tortillas.|4. Rellenar las tortillas con coliflor, nueces y aderezo de aguacate.">
+				<div class="container-img">
+					<img src="img/tacovegetariano.png" alt="Imagen Receta" />
+					<button class="btn-favorite">
+						<i class='bx bxs-bookmark'></i>
+					</button>
+				</div>
+
+				<div class="content">
+					<h3>Taco vegetariano de coliflor y nueces</h3>
+
+					<div class="footer">
+						<span class="time">
+							<i class='bx bx-time'></i>
+							30 min
+						</span>
+						<span class="category">
+							<i class='bx bx-fork'></i>
+							Occidental
+						</span>
+					</div>
+					<button class="toggle-flip">Ver Receta</button>
+				</div>
+			</div>
+
+			<div class="card-recipe"
+				data-ingredients="Pollo a la parrilla|Mezcla de hojas|Almendras laminadas|Aderezo de miel y mostaza|Pimiento rojo"
+				data-steps="1. Cocinar el pollo a la parrilla y cortarlo en tiras.|2. Preparar el aderezo mezclando miel, mostaza, aceite y vinagre.|3. Mezclar el pollo y las hojas.|4. Servir con almendras y pimiento rojo.">
+				<div class="container-img">
+					<img src="img/ensaladapollomiel.png" alt="Imagen Receta" />
+					<button class="btn-favorite">
+						<i class='bx bxs-bookmark'></i>
+					</button>
+				</div>
+
+				<div class="content">
+					<h3>Ensalada de pollo arcoíris con almendras y miel</h3>
+
+					<div class="footer">
+						<span class="time">
+							<i class='bx bx-time'></i>
+							30 min
+						</span>
+						<span class="category">
+							<i class='bx bx-fork'></i>
+							Saludable
+						</span>
+					</div>
+					<button class="toggle-flip">Ver Receta</button>
+				</div>
+			</div>
+
+			<div class="card-recipe"
+				data-ingredients="Pan de molde integral|Carne de cerdo deshebrada|Salsa barbacoa picante|Queso|Papas fritas"
+				data-steps="1. Calentar la carne en salsa BBQ.|2. Tostar ligeramente el pan. Colocar el queso.|3. Rellenar con la carne y cerrar el sandwich.|4. Servir inmediatamente con papas fritas.">
+				<div class="container-img">
+					<img src="img/sandwich.png" alt="Imagen Receta" />
+					<button class="btn-favorite">
+						<i class='bx bxs-bookmark'></i>
+					</button>
+				</div>
+
+				<div class="content">
+					<h3>Sandwich picante de barbacoa con papas fritas</h3>
+
+					<div class="footer">
+						<span class="time">
+							<i class='bx bx-time'></i>
+							30 min
+						</span>
+						<span class="category">
+							<i class='bx bx-fork'></i>
+							Aperitivo
+						</span>
+					</div>
+					<button class="toggle-flip">Ver Receta</button>
+				</div>
+			</div>
+
+			<div class="card-recipe"
+				data-ingredients="Arroz cocido (frío)|Camarones|Huevo|Zanahoria|Salsa de soja|Aceite de sésamo"
+				data-steps="1. Saltear los camarones y el huevo revuelto. Retirar.|2. Freír el arroz frío con la zanahoria.|3. Añadir los camarones, huevo y salsa de soja.|4. Servir caliente.">
+				<div class="container-img">
+					<img src="img/arrozfritojapo.png" alt="Imagen Receta" />
+					<button class="btn-favorite">
+						<i class='bx bxs-bookmark'></i>
+					</button>
+				</div>
+
+				<div class="content">
+					<h3>Arroz frito japonés (Mariscos)</h3>
+
+					<div class="footer">
+						<span class="time">
+							<i class='bx bx-time'></i>
+							30 min
+						</span>
+						<span class="category">
+							<i class='bx bx-fork'></i>
+							Mariscos
+						</span>
+					</div>
+					<button class="toggle-flip">Ver Receta</button>
+				</div>
+			</div>
+
+			<div class="card-recipe"
+				data-ingredients="Fideos Ramen|Caldo de pollo|Huevo duro|Cebolleta|Pollo desmenuzado|Salsa de soja"
+				data-steps="1. Calentar el caldo.|2. Cocer los fideos. Escurrir.|3. Montar el tazón con fideos, caldo, pollo y huevo.|4. Decorar con cebolleta picada y añadir salsa de soja.">
+				<div class="container-img">
+					<img src="img/soparamen.png" alt="Imagen Receta" />
+					<button class="btn-favorite">
+						<i class='bx bxs-bookmark'></i>
+					</button>
+				</div>
+
+				<div class="content">
+					<h3>Sopa ramen de pollo con champiñones</h3>
+
+					<div class="footer">
+						<span class="time">
+							<i class='bx bx-time'></i>
+							30 min
+						</span>
+						<span class="category">
+							<i class='bx bx-fork'></i>
+							Oriental
+						</span>
+					</div>
+					<button class="toggle-flip">Ver Receta</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="container">
+		<div class="footer-nav-line">
+			<button id="footer-nav-btn" class="footer-nav-btn" aria-haspopup="true" aria-expanded="false"
+				aria-label="Abrir navegación rápida">
+				<span class="btn-icon">🔀</span>
+			</button>
+
+			<div id="footer-nav-line" class="nav-line" aria-hidden="true" aria-label="Navegación rápida">
+				<a href="#" class="line-item" data-target="home" title="Inicio" aria-label="Inicio">🏠<span
+						class="sr-only">Inicio</span></a>
+				<a href="./html/recetas.html" class="line-item" data-target="recetas" title="Recetas"
+					aria-label="Recetas">📄<span class="sr-only">Recetas</span></a>
+				<a href="./html/chef.html" class="line-item" data-target="chef" title="Chef"
+					aria-label="Chef">🧑‍🍳<span class="sr-only">Chef</span></a>
+				<a href="./html/categorias.html" class="line-item" data-target="categorias" title="Categorias"
+					aria-label="Categorías">🏷️<span class="sr-only">Categorías</span></a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./js/index.js"></script>
+</body>
+
+</html>

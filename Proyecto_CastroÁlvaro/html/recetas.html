@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Recetas LMAR</title>
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Poppins:wght@300;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles2.css">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+
+      <nav class="navbar">
+        <div class="custom-nav" aria-label="Main navigation">
+
+          <a href="../index.html" class="item" style="--hue:200">
+            <span class="icon mono" id="blur0" aria-hidden="true">🏠</span>
+            <span class="icon mono" aria-hidden="true">🏠</span>
+            <span class="icon midl" aria-hidden="true">🏠</span>
+            <span class="icon grey" aria-hidden="true">🏠</span>
+            <span class="label">Home</span>
+          </a>
+
+          <a href="#" target="_blank" class="item" style="--hue:260">
+            <span class="icon mono" id="blur1" aria-hidden="true">📄</span>
+            <span class="icon mono" aria-hidden="true">📄</span>
+            <span class="icon midl" aria-hidden="true">📄</span>
+            <span class="icon grey" aria-hidden="true">📄</span>
+            <span class="label">Recetas</span>
+          </a>
+
+          <a href="chef.html" target="_blank" class="item" style="--hue:320">
+            <span class="icon mono" id="blur2" aria-hidden="true">🧑‍🍳</span>
+            <span class="icon mono" aria-hidden="true">🧑‍🍳</span>
+            <span class="icon midl" aria-hidden="true">🧑‍🍳</span>
+            <span class="icon grey" aria-hidden="true">🧑‍🍳</span>
+            <span class="label">Chef</span>
+          </a>
+
+          <a href="categorias.html" target="_blank" class="item" style="--hue:40">
+            <span class="icon mono" id="blur3" aria-hidden="true">🏷️</span>
+            <span class="icon mono" aria-hidden="true">🏷️</span>
+            <span class="icon midl" aria-hidden="true">🏷️</span>
+            <span class="icon grey" aria-hidden="true">🏷️</span>
+            <span class="label">Categorías</span>
+          </a>
+        </div>
+      </nav>
+
+      <button class="btn-menu-responsive">
+        <i class='bx bx-menu' style='color:#b48a2a'></i>
+      </button>
+    </div>
+
+    <div class="menu-mobile">
+      <div class="btn-close">
+        <i class='bx bx-x'></i>
+      </div>
+      <nav class="navbar">
+        <div class="custom-nav" aria-label="Main navigation">
+
+          <a href="../index.html" target="_blank" class="item" style="--hue:200">
+            <span class="icon mono" id="blur0" aria-hidden="true">🏠</span>
+            <span class="label">Home</span>
+          </a>
+
+          <a href="#" target="_blank" class="item" style="--hue:260">
+            <span class="icon mono" id="blur1" aria-hidden="true">📄</span>
+            <span class="label">Recetas</span>
+          </a>
+
+          <a href="chef.html" target="_blank" class="item" style="--hue:320">
+            <span class="icon mono" id="blur2" aria-hidden="true">🧑‍🍳</span>
+            <span class="label">Chef</span>
+          </a>
+
+          <a href="categorias.html" target="_blank" class="item" style="--hue:40">
+            <span class="icon mono" id="blur3" aria-hidden="true">🏷️</span>
+            <span class="label">Categorías</span>
+          </a>
+
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <h1 class="page-main-title">Mis Libros de Recetas</h1>
+    <p class="section-description">Colecciones divididas en caliente y fría, con interacción tipo libro real.</p>
+
+    <section class="book-wrapper">
+      <h2 class="book-title"><i class='bx bxs-hot'></i> Recetas Calientes</h2>
+
+      <div class="book" id="book-calientes" aria-label="Libro recetas calientes">
+        <div class="paper">
+          <div class="front">
+            <div class="content page-content">
+              <h3>Portada - Calientes</h3>
+              <div class="preparation-block">
+                <h4>Descripción</h4>
+                <p>Platos de confort para días fríos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="back">
+            <div class="content page-content">
+              <h3>Sopa Ramen</h3>
+              <div class="recipe-meta">
+                <span><i class='bx bx-time'></i> 45 min</span>
+                <span class="recipe-difficulty"> Media</span>
+                <span><i class='bx bx-group'></i> 2 personas</span>
+              </div>
+              <div class="recipe-image">
+                <img src="../img/soparamen.png" alt="">
+              </div>
+              <div class="ingredients">
+                <h4>Ingredientes Clave</h4>
+                <ul>
+                  <li>Fideos para ramen</li>
+                  <li>Huevo cocido marinado en salsa de soja</li>
+                  <li>Cebolleta, alga nori y rodajas de chashu (cerdo)</li>
+                </ul>
+              </div>
+              <div class="preparation-block">
+                <h4>Preparación</h4>
+                <p>Calienta el caldo base. Cocina los fideos al dente. En un bol, vierte el caldo y agrega los fideos.
+                  Decora con el huevo marinado, rodajas de carne de cerdo (chashu), cebolleta picada y alga nori. Sirve
+                  de inmediato.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="paper">
+          <div class="front">
+            <div class="content page-content">
+              <h3>Guiso de Pollo</h3>
+              <div class="recipe-meta">
+                <span><i class='bx bx-time'></i> 1 hora 15 min</span>
+                <span class="recipe-difficulty"> Fácil</span>
+                <span><i class='bx bx-group'></i> 4 personas</span>
+              </div>
+              <div class="recipe-image">
+                <img src="../img/guisopollo.png" alt="">
+              </div>
+              <div class="ingredients">
+                <h4>Ingredientes Clave</h4>
+                <ul>
+                  <li>Muslos de pollo deshuesados</li>
+                  <li>Papas y zanahorias</li>
+                  <li>Caldo de pollo y vino blanco</li>
+                </ul>
+              </div>
+              <div class="preparation-block">
+                <h4>Preparación</h4>
+                <p>Sella los muslos de pollo en aceite. Sofríe cebolla y ajo. Agrega el pollo, papas y zanahorias.
+                  Vierte el caldo y el vino. Cocina a fuego lento por al menos 1 hora hasta que la carne esté tierna.
+                  Rectifica de sal y pimienta.</p>
+              </div>
+            </div>
+          </div>
+          <div class="back">
+            <div class="content page-content">
+              <h3>Risotto de Champiñones</h3>
+              <div class="recipe-meta">
+                <span><i class='bx bx-time'></i> 30 min</span>
+                <span class="recipe-difficulty"> Media</span>
+                <span><i class='bx bx-group'></i> 3 personas</span>
+              </div>
+              <div class="recipe-image">
+                <img src="../img/risottochampi.png" alt="">
+              </div>
+              <div class="ingredients">
+                <h4>Ingredientes Clave</h4>
+                <ul>
+                  <li>Arroz Arborio</li>
+                  <li>Caldo de verduras caliente</li>
+                  <li>Champiñones, vino blanco y queso Parmesano</li>
+                </ul>
+              </div>
+              <div class="preparation-block">
+                <h4>Preparación</h4>
+                <p>Sofríe los champiñones. Tuesta el arroz Arborio y desglasa con vino blanco. Agrega el caldo de
+                  verduras caliente cucharón a cucharón, removiendo constantemente hasta que el arroz esté cremoso.
+                  Fuera del fuego, manteca con mantequilla y Parmesano.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="paper">
+          <div class="front">
+            <div class="content page-content">
+              <h3>Crema de Calabaza</h3>
+              <div class="recipe-meta">
+                <span><i class='bx bx-time'></i> 50 min</span>
+                <span class="recipe-difficulty"> Fácil</span>
+                <span><i class='bx bx-group'></i> 4 personas</span>
+              </div>
+              <div class="recipe-image">
+                <img src="../img/cremacalabaza.png" alt="">
+              </div>
+              <div class="ingredients">
+                <h4>Ingredientes Clave</h4>
+                <ul>
+                  <li>Calabaza fresca</li>
+                  <li>Leche de coco y jengibre</li>
+                  <li>Caldo de verduras</li>
+                </ul>
+              </div>
+              <div class="preparation-block">
+                <h4>Preparación</h4>
+                <p>Hierve la calabaza troceada con el caldo de verduras y el jengibre hasta que esté muy blanda. Tritura
+                  la mezcla hasta obtener una textura aterciopelada. Vuelve a calentar, añade la leche de coco y ajusta
+                  los condimentos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="back">
+            <div class="content page-content">
+              <h3>Fin</h3>
+              <div class="preparation-block">
+                <h4>Nota</h4>
+                <p>Gracias por explorar nuestras recetas calientes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="btn" id="prev-btn-calientes"><i class='bx bx-left-arrow-alt'></i> Anterior</button>
+        <button class="btn" id="next-btn-calientes">Siguiente <i class='bx bx-right-arrow-alt'></i></button>
+      </div>
+    </section>
+
+    <section class="book-wrapper">
+      <h2 class="book-title book-frias"><i class='bx bxs-cube'></i> Recetas Frías</h2>
+
+      <div class="book" id="book-frias" aria-label="Libro recetas frías">
+        <div class="paper">
+          <div class="front">
+            <div class="content page-content">
+              <h3>Portada - Frías</h3>
+              <div class="preparation-block">
+                <h4>Descripción</h4>
+                <p>Platos frescos y ligeros.</p>
+              </div>
+            </div>
+          </div>
+          <div class="back">
+            <div class="content page-content">
+              <h3>Gazpacho</h3>
+              <div class="recipe-meta">
+                <span><i class='bx bx-time'></i> 15 min + enfriado</span>
+                <span class="recipe-difficulty"> Fácil</span>
+                <span><i class='bx bx-group'></i> 6 personas</span>
+              </div>
+              <div class="recipe-image">
+                <img src="../img/gazpacho.png" alt="">
+              </div>
+              <div class="ingredients">
+                <h4>Ingredientes Clave</h4>
+                <ul>
+                  <li>Tomates bien rojos</li>
+                  <li>Pimiento verde y pepino</li>
+                  <li>Aceite de oliva virgen extra</li>
+                </ul>
+              </div>
+              <div class="preparation-block">
+                <h4>Preparación</h4>
+                <p>Tritura los tomates, pimiento verde, pepino, ajo y pan duro con agua. Cuela la mezcla para obtener
+                  una textura fina. Emulsiona con un buen chorro de aceite de oliva virgen extra. Refrigera por al menos
+                  dos horas antes de servir.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="paper">
+          <div class="front">
+            <div class="content page-content">
+              <h3>Ensalada Quinoa y Mango</h3>
+              <div class="recipe-meta">
+                <span><i class='bx bx-time'></i> 20 min</span>
+                <span class="recipe-difficulty"> Fácil</span>
+                <span><i class='bx bx-group'></i> 2 personas</span>
+              </div>
+              <div class="recipe-image">
+                <img src="../img/ensaladaquinoa.png" alt="">
+              </div>
+              <div class="ingredients">
+                <h4>Ingredientes Clave</h4>
+                <ul>
+                  <li>Quinoa cocida</li>
+                  <li>Mango, aguacate y cilantro</li>
+                  <li>Jugo de lima para el aderezo</li>
+                </ul>
+              </div>
+              <div class="preparation-block">
+                <h4>Preparación</h4>
+                <p>Mezcla la quinoa cocida y fría con cubos de mango, aguacate y cilantro picado. Prepara un aderezo con
+                  aceite de oliva, jugo de lima y una pizca de sal. Vierte el aderezo sobre la ensalada y mezcla
+                  suavemente antes de servir.</p>
+              </div>
+            </div>
+          </div>
+          <div class="back">
+            <div class="content page-content">
+              <h3>Ceviche</h3>
+              <div class="recipe-meta">
+                <span><i class='bx bx-time'></i> 10 min + marinado</span>
+                <span class="recipe-difficulty"> Media</span>
+                <span><i class='bx bx-group'></i> 2 personas</span>
+              </div>
+              <div class="recipe-image">
+                <img src="../img/ceviche.png" alt="">
+              </div>
+              <div class="ingredients">
+                <h4>Ingredientes Clave</h4>
+                <ul>
+                  <li>Filete de pescado blanco fresco</li>
+                  <li>Jugo de lima y limón</li>
+                  <li>Cebolla morada y ají limo</li>
+                </ul>
+              </div>
+              <div class="preparation-block">
+                <h4>Preparación</h4>
+                <p>Corta el pescado en cubos. Vierte el jugo de lima/limón (leche de tigre) sobre el pescado e incorpora
+                  la cebolla morada en julianas y el ají. El marinado en el cítrico debe durar de 5 a 10 minutos para
+                  "cocinar" el pescado. Sirve inmediatamente.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="paper">
+          <div class="front">
+            <div class="content page-content">
+              <h3>Tartar de Salmón</h3>
+              <div class="recipe-meta">
+                <span><i class='bx bx-time'></i> 15 min</span>
+                <span class="recipe-difficulty"> Media</span>
+                <span><i class='bx bx-group'></i> 2 personas</span>
+              </div>
+              <div class="recipe-image">
+                <img src="../img/tartarsalmon.png" alt="">
+              </div>
+              <div class="ingredients">
+                <h4>Ingredientes Clave</h4>
+                <ul>
+                  <li>Salmón fresco para sashimi</li>
+                  <li>Salsa de soja y aceite de sésamo</li>
+                  <li>Cebolleta china</li>
+                </ul>
+              </div>
+              <div class="preparation-block">
+                <h4>Preparación</h4>
+                <p>Corta el salmón fresco y el aguacate en cubos muy finos. Prepara una vinagreta con salsa de soja,
+                  aceite de sésamo y cebolleta china picada. Mezcla el salmón y el aguacate con la vinagreta. Utiliza un
+                  aro de emplatar para darle forma.</p>
+              </div>
+            </div>
+          </div>
+          <div class="back">
+            <div class="content page-content">
+              <h3>Fin</h3>
+              <div class="preparation-block">
+                <h4>Nota</h4>
+                <p>Gracias por explorar nuestras recetas frías.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="btn" id="prev-btn-frias"><i class='bx bx-left-arrow-alt'></i> Anterior</button>
+        <button class="btn" id="next-btn-frias">Siguiente <i class='bx bx-right-arrow-alt'></i></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div class="footer-nav-line">
+      <button id="footer-nav-btn" class="footer-nav-btn" aria-haspopup="true" aria-expanded="false"
+        aria-label="Abrir navegación rápida">
+        <span class="btn-icon">🔀</span>
+      </button>
+
+      <div id="footer-nav-line" class="nav-line" aria-hidden="true" aria-label="Navegación rápida">
+        <a href="../index.html" class="line-item" data-target="home" title="Inicio" aria-label="Inicio">🏠<span
+            class="sr-only">Inicio</span></a>
+        <a href="./recetas.html" class="line-item" data-target="recetas" title="Recetas" aria-label="Recetas">📄<span
+            class="sr-only">Recetas</span></a>
+        <a href="./chef.html" class="line-item" data-target="chef" title="Chef" aria-label="Chef">🧑‍🍳<span
+            class="sr-only">Chef</span></a>
+        <a href="./categorias.html" class="line-item" data-target="categorias" title="Categorias"
+          aria-label="Categorías">🏷️<span class="sr-only">Categorías</span></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="../js/index2.js"></script>
+</body>
+
+</html>

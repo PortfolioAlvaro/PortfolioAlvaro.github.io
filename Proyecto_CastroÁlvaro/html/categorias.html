@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Categorías LMAR</title>
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/styles4.css">
+</head>
+
+<body>
+	<header>
+		<div class="header">
+
+			<nav class="navbar">
+				<div class="custom-nav" aria-label="Main navigation">
+
+					<a href="../index.html" class="item" style="--hue:200">
+						<span class="icon mono" id="blur0" aria-hidden="true">🏠</span>
+						<span class="icon mono" aria-hidden="true">🏠</span>
+						<span class="icon midl" aria-hidden="true">🏠</span>
+						<span class="icon grey" aria-hidden="true">🏠</span>
+						<span class="label">Home</span>
+					</a>
+
+					<a href="recetas.html" target="_blank" class="item" style="--hue:260">
+						<span class="icon mono" id="blur1" aria-hidden="true">📄</span>
+						<span class="icon mono" aria-hidden="true">📄</span>
+						<span class="icon midl" aria-hidden="true">📄</span>
+						<span class="icon grey" aria-hidden="true">📄</span>
+						<span class="label">Recetas</span>
+					</a>
+
+					<a href="chef.html" target="_blank" class="item" style="--hue:320">
+						<span class="icon mono" id="blur2" aria-hidden="true">🧑‍🍳</span>
+						<span class="icon mono" aria-hidden="true">🧑‍🍳</span>
+						<span class="icon midl" aria-hidden="true">🧑‍🍳</span>
+						<span class="icon grey" aria-hidden="true">🧑‍🍳</span>
+						<span class="label">Chef</span>
+					</a>
+
+					<a href="#" target="_blank" class="item" style="--hue:40">
+						<span class="icon mono" id="blur3" aria-hidden="true">🏷️</span>
+						<span class="icon mono" aria-hidden="true">🏷️</span>
+						<span class="icon midl" aria-hidden="true">🏷️</span>
+						<span class="icon grey" aria-hidden="true">🏷️</span>
+						<span class="label">Categorías</span>
+					</a>
+				</div>
+			</nav>
+
+			<button class="btn-menu-responsive">
+				<i class='bx bx-menu' style='color:#b48a2a'></i>
+			</button>
+		</div>
+
+		<div class="menu-mobile">
+			<div class="btn-close">
+				<i class='bx bx-x'></i>
+			</div>
+			<nav class="navbar">
+				<div class="custom-nav" aria-label="Main navigation">
+
+					<a href="../index.html" target="_blank" class="item" style="--hue:200">
+						<span class="icon mono" id="blur0" aria-hidden="true">🏠</span>
+						<span class="label">Home</span>
+					</a>
+
+					<a href="recetas.html" target="_blank" class="item" style="--hue:260">
+						<span class="icon mono" id="blur1" aria-hidden="true">📄</span>
+						<span class="label">Recetas</span>
+					</a>
+
+					<a href="chef.html" target="_blank" class="item" style="--hue:320">
+						<span class="icon mono" id="blur2" aria-hidden="true">🧑‍🍳</span>
+						<span class="label">Chef</span>
+					</a>
+
+					<a href="#"  target="_blank" class="item" style="--hue:40">
+						<span class="icon mono" id="blur3" aria-hidden="true">🏷️</span>
+						<span class="label">Categorías</span>
+					</a>
+
+				</div>
+			</nav>
+		</div>
+	</header>
+	<section class="section-categorias container">
+		<h1>Categorías del menú</h1>
+		<p>Explora las diferentes categorías de platos. Haz clic para ver más opciones de cada tipo.</p>
+		<div class="categorias-list">
+			<div class="categoria-card">
+				<button class="categoria-btn" onclick="toggleMenu('entrantes')">
+					<i class='bx bx-cheese'></i> Entrantes
+				</button>
+				<ul class="categoria-menu" id="menu-entrantes">
+					<li>Ensaladas</li>
+					<li>Tapas</li>
+					<li>Carpaccios</li>
+					<li>Gazpacho</li>
+				</ul>
+			</div>
+			<div class="categoria-card">
+				<button class="categoria-btn" onclick="toggleMenu('principales')">
+					<i class='bx bx-bowl-hot'></i> Platos principales
+				</button>
+				<ul class="categoria-menu" id="menu-principales">
+					<li>Carnes</li>
+					<li>Pescados</li>
+					<li>Pasta</li>
+					<li>Vegetarianos</li>
+				</ul>
+			</div>
+			<div class="categoria-card">
+				<button class="categoria-btn" onclick="toggleMenu('postres')">
+					<i class='bx bx-cake'></i> Postres
+				</button>
+				<ul class="categoria-menu" id="menu-postres">
+					<li>Tartas</li>
+					<li>Pasteles</li>
+					<li>Pudines</li>
+					<li>Frutas frescas</li>
+				</ul>
+			</div>
+			<div class="categoria-card">
+				<button class="categoria-btn" onclick="toggleMenu('bebidas')">
+					<i class='bx bx-coffee-togo'></i> Bebidas
+				</button>
+				<ul class="categoria-menu" id="menu-bebidas">
+					<li>Cócteles</li>
+					<li>Jugos</li>
+					<li>Vinos y cervezas</li>
+					<li>Licores</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-info-add container">
+		<h2>¿Qué encontrarás aquí?</h2>
+		<div class="info-add-list">
+			<div class="info-card">
+				<i class='bx bx-dish'></i>
+				<p>Sugerencias y variedad por cada categoría.</p>
+			</div>
+			<div class="info-card">
+				<i class='bx bx-star'></i>
+				<p>Opciones recomendadas por el chef y usuarios.</p>
+			</div>
+			<div class="info-card">
+				<i class='bx bx-book-content'></i>
+				<p>Acceso rápido a recetas relacionadas desde el menú.</p>
+			</div>
+		</div>
+	</section>
+
+	<footer class="container">
+		<div class="footer-nav-line">
+			<button id="footer-nav-btn" class="footer-nav-btn" aria-haspopup="true" aria-expanded="false"
+				aria-label="Abrir navegación rápida">
+				<span class="btn-icon">🔀</span>
+			</button>
+
+			<div id="footer-nav-line" class="nav-line" aria-hidden="true" aria-label="Navegación rápida">
+				<a href="../index.html" class="line-item" data-target="home" title="Inicio" aria-label="Inicio">🏠<span
+						class="sr-only">Inicio</span></a>
+				<a href="./recetas.html" class="line-item" data-target="recetas" title="Recetas"
+					aria-label="Recetas">📄<span class="sr-only">Recetas</span></a>
+				<a href="./chef.html" class="line-item" data-target="chef" title="Chef" aria-label="Chef">🧑‍🍳<span
+						class="sr-only">Chef</span></a>
+				<a href="./categorias.html" class="line-item" data-target="categorias" title="Categorias"
+					aria-label="Categorías">🏷️<span class="sr-only">Categorías</span></a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="../js/index4.js"></script>
+</body>
+
+</html>
